@@ -36,3 +36,9 @@ test("Button when clicked has a dialog with correct output", async ({ page }) =>
   );
   await page.locator(`${root} button`).click();
 });
+
+// Render function - do I get what is expected
+test("Button default has correct screenshot", async ({ page }) => {
+  await page.goto("iframe.html?viewMode=story&id=button--button-default");
+  await expect(page.locator(`${root} button`)).toHaveScreenshot();
+});
