@@ -26,3 +26,9 @@ logs
 # Storybook
 .storybook
 storybook-static
+
+# Playwright test results
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

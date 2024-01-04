@@ -9,9 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "dev:test": "npx playwright test --ui",
+    "test:storybook": "npx playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.40.1",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
@@ -19,6 +22,7 @@
     "@storybook/test": "^7.6.7",
     "@storybook/vue3": "^7.6.7",
     "@storybook/vue3-vite": "^7.6.7",
+    "@types/node": "^20.10.6",
     "nuxt": "^3.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
