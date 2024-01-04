@@ -1,0 +1,1 @@
+export const rootSelector = "#storybook-root";
