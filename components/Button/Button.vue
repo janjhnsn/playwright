@@ -2,6 +2,7 @@
   <button
     type="button"
     :name="attributes?.name"
+    @click="options?.onClick"
   >
     {{ content?.value }}
   </button>
@@ -13,10 +14,10 @@
       type: Object,
       default: undefined,
     },
-    // options: {
-    //   type: Object,
-    //   default: undefined,
-    // },
+    options: {
+      type: Object,
+      default: undefined,
+    },
     attributes: {
       type: Object,
       default: undefined,
